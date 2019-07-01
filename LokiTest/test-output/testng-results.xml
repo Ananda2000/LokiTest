@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Launching the browser]]>
+    </line>
+    <line>
+      <![CDATA[Maximizing the window]]>
+    </line>
+    <line>
+      <![CDATA[inserting the url]]>
+    </line>
+    <line>
+      <![CDATA[Inserting the user name :]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="47707" started-at="2019-06-30T15:27:16Z" finished-at="2019-06-30T15:28:03Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="47707" started-at="2019-06-30T15:27:16Z" finished-at="2019-06-30T15:28:03Z">
+      <class name="LakshmiDailyTask.DailyTask">
+        <test-method status="PASS" signature="fb_login_dataprovider()[pri:0, instance:LakshmiDailyTask.DailyTask@3ecd23d9]" name="fb_login_dataprovider" duration-ms="47604" started-at="2019-06-30T15:27:16Z" finished-at="2019-06-30T15:28:03Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching the browser]]>
+            </line>
+            <line>
+              <![CDATA[Maximizing the window]]>
+            </line>
+            <line>
+              <![CDATA[inserting the url]]>
+            </line>
+            <line>
+              <![CDATA[Inserting the user name :]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- fb_login_dataprovider -->
+      </class> <!-- LakshmiDailyTask.DailyTask -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
