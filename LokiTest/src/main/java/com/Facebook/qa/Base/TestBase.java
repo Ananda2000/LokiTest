@@ -19,6 +19,7 @@ public class TestBase {
 	public TestBase() throws IOException
 	{
 		try {
+			
 			prop=new Properties();
 			FileInputStream ip=new FileInputStream("C:\\Anand\\WS_2018-09\\LokiTest\\src\\main\\java\\Configuration\\Config.properties");
 		    prop.load(ip);

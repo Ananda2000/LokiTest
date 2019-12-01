@@ -1,10 +1,10 @@
-package LakshmiDailyTask;
+package LinksAndImages;
+
 
 import java.io.File;
 import java.io.IOException;
 import java.sql.DriverAction;
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
@@ -19,11 +19,10 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class DailyTask {
-	
+
+public class Daily_activity {
 	
 @Test
-
 		public void fb_login_dataprovider() {
 	
 	WebDriver driver;
@@ -60,10 +59,6 @@ public class DailyTask {
 	
 	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	//driver.findElement(By.xpath("//a[@class='Tipsified' and @data-original-title='Export/Archive &lt;= Yesterday']")).click();
-
-	driver.findElement(By.xpath("//a[contains(text(),'Reports & Charts')]")).click();
-	
-	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	driver.findElement(By.xpath("//a[@href='/db/bf94cth8m?a=q&qid=108']")).click();
 	
 	//driver.findElement(By.xpath("//span[text()='More']")).click();
@@ -76,20 +71,6 @@ public class DailyTask {
 	driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
 	
 	driver.findElement(By.linkText("Delete all records in this report")).click();
-	
-	Set<String> allWindowHandles =driver.getWindowHandles(); 
-	
-	String mainwindow = driver.getWindowHandle();
-	for(String handle : allWindowHandles)
-	 {
-	 System.out.println("Window handle - > " + handle);
-	 if(!handle.equals(mainwindow)) {
-		 driver.switchTo().window(handle);
-		 driver.findElement(By.xpath("//input[@value='Delete WIP']")).click();
-	 }
-	 }
-	
-	// after switching window we need to click this button. //input[@value='Delete WIP']
 	
 	TakesScreenshot scrshot = ((TakesScreenshot)driver);
 	File src =  scrshot.getScreenshotAs(OutputType.FILE);
